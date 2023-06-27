@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 app.use('/api/workouts', workoutRoutes);
 app.use('/api/user', userRoutes);
 
-mongoose.connect('mongodb://localhost:27017/workout', {
+mongoose.connect('mongodb+srv://Workout:Workout123@cluster0.h6vo9xp.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4,
